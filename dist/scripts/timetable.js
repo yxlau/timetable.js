@@ -209,7 +209,7 @@ Timetable.Renderer = function(tt) {
 				eventNode.className = hasAdditionalClass ? 'time-entry ' + event.options.class : 'time-entry';
 				eventNode.style.width = computeEventBlockWidth(event);
 				eventNode.style.left = computeEventBlockOffset(event);
-				smallNode.textContent = event.name;
+				smallNode.innerHTML = event.name;
 			}
 			function computeEventBlockWidth(event) {
 				var start = event.startDate;
